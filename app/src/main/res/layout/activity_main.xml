@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/ll_actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <android.widget.Button
+            android:id="@+id/open"
+            android:outlineProvider="none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@null"
+            android:layout_alignParentStart="true"
+            android:background="#ffffff"
+            android:text="@string/open"
+            android:textSize="20sp"
+            android:textColor="#303030"/>
+        <android.widget.Button
+            android:id="@+id/origin"
+            android:outlineProvider="none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@null"
+            android:background="#ffffff"
+            android:layout_marginStart="70dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/origin"
+            android:textSize="20sp"
+            android:textColor="#303030"/>
+
+        <android.widget.Button
+            android:id="@+id/save"
+            android:outlineProvider="none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@null"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="65dp"
+            android:background="#ffffff"
+            android:text="@string/save"
+            android:textColor="#CC0000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_height="300dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:contentDescription="@string/todo" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp">
+            <TextView
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:text="@string/StringHue"/>
+
+            <SeekBar
+                android:id="@+id/SeekbarHue"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:max="256"
+                android:progress="128" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp">
+            <TextView
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/gray"
+                android:text="@string/StringSaturation"/>
+
+            <SeekBar
+                android:id="@+id/SeekbarSaturation"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:max="256"
+                android:progress="128" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp">
+            <TextView
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/gray"
+                android:text="@string/StringLum"/>
+
+            <SeekBar
+                android:id="@+id/SeekbarLum"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:max="256"
+                android:progress="128" />
+        </TableRow>
+    </TableLayout>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal">
+            <android.widget.Button
+                android:id="@+id/button1"
+                android:outlineProvider="none"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@null"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/buttonToGray"
+                android:background="@xml/roundbutton"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="150dp"
+                tools:layout_editor_absoluteY="90dp"
+                />
+            <android.widget.Button
+                android:id="@+id/button2"
+                android:outlineProvider="none"
+                android:layout_toEndOf="@id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@null"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/ToDilate"
+                android:background="@xml/roundbutton"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="150dp"
+                tools:layout_editor_absoluteY="90dp"
+                />
+
+            <android.widget.Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="5dp"
+                android:background="@xml/roundbutton"
+                android:backgroundTint="@null"
+                android:layout_toEndOf="@id/button2"
+                android:outlineProvider="none"
+                android:text="@string/erode"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="150dp"
+                tools:layout_editor_absoluteY="90dp" />
+
+            <android.widget.Button
+                android:id="@+id/button4"
+                android:outlineProvider="none"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@null"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/MedianBlur"
+                android:background="@xml/roundbutton"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_toEndOf="@id/button3"
+                tools:layout_editor_absoluteX="150dp"
+                tools:layout_editor_absoluteY="90dp"
+                />
+            <android.widget.Button
+                android:id="@+id/button5"
+                android:outlineProvider="none"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@null"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/button4"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/GaussianBlur"
+                android:background="@xml/roundbutton"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="150dp"
+                tools:layout_editor_absoluteY="90dp"
+                />
+            <android.widget.Button
+                android:id="@+id/button6"
+                android:outlineProvider="none"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/button5"
+                android:backgroundTint="@null"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/CannyScan"
+                android:background="@xml/roundbutton"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="150dp"
+                tools:layout_editor_absoluteY="90dp"
+                />
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+
+</LinearLayout>
+
+
+

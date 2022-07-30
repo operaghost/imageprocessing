@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Scrawl</string>
+    <string name="button">Button</string>
+    <string name="buttonToGray">灰度</string>
+    <string name="StringHue">色相</string>
+    <string name="StringSaturation">饱和度</string>
+    <string name="StringLum">亮度</string>
+    <string name="todo">TODO</string>
+    <string name="ToDilate">膨胀</string>
+    <string name="back">返回</string>
+    <string name="erode">腐蚀</string>
+    <string name="origin">原图</string>
+    <string name="save">保存</string>
+    <string name="importimg">+</string>
+    <string name="openimg">打开图片</string>
+    <string name="open">打开</string>
+    <string name="MedianBlur">中值滤波</string>
+    <string name="GaussianBlur">高斯模糊</string>
+    <string name="CannyScan">Canny边缘检测</string>
+</resources>
